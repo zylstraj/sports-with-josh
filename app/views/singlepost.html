@@ -1,0 +1,27 @@
+<section data-ng-controller="AppCtrl" data-ng-init="getBlog()">
+  <div>
+    <h1>These are the articles</h1>
+    <div>
+      <h3>{{blog.title}}</h3>
+      <!-- <img data-ng-src="{{blog.titleImage}}"> -->
+      <!-- <p>Posted on {{blog.date | date: 'M/dd/yyyy'}}</p>
+      <p>Author: {{blog.author}}</p>
+      <p>Keywords: {{blog.keywords[0]}}</p>
+      <p>{{blog.content}}</p> -->
+     <!--  <img data-ng-src="{{blog.primary}}">
+      <img data-ng-src="{{blog.secondary}}">
+      <p>Article Id: {{blog._id}}</p> -->
+      <form data-ng-submit="editBlog(blog)">
+        <label for="edit_Title">Title</label>
+        <input type="text" id="edit_Title" data-ng-model="blog.title"/>
+        <label for="edit_Date">Date</label>
+        <input type="text" id="edit_Date" data-ng-model="blog.date"/>
+        <label for="edit_Content">Content</label>
+        <textarea type="text" id="edit_Content" data-ng-model="blog.content"></textarea>
+        <button type="button" data-ng-click="adminReturn()">Cancel</button>
+        <button type="submit">Update</button>
+        <button data-ng-click="removeBlog(blog)">Delete</button>
+      </form>
+    </div>
+  </div>
+</section>
