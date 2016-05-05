@@ -19,6 +19,10 @@ app.config(['$routeProvider', function($routeProvider) {
       controller: 'AppCtrl'
     })
     .when('/blogs/:_id', {
+      templateUrl: 'views/singleview.html',
+      controller: 'AppCtrl'
+    })
+    .when('/admin/:_id', {
       templateUrl: 'views/singlepost.html',
       controller: 'AppCtrl'
     })
