@@ -23,13 +23,18 @@ gulp.task('lint', function(){
     .pipe(lint.format());
 });
 
+// gulp.task('build:css', function() {
+//   gulp.src('app/sass/app.sass')
+//     .pipe(sourcemaps.init())
+//     .pipe(sass())
+//     .pipe(autoprefixer())
+//     .pipe(minifyCss())
+//     .pipe(sourcemaps.write())
+//     .pipe(gulp.dest('public/'));
+// });
 gulp.task('build:css', function() {
-  gulp.src('app/sass/app.sass')
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .pipe(autoprefixer())
-    .pipe(minifyCss())
-    .pipe(sourcemaps.write())
+  return gulp.src('app/**/*.css')
+    .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(gulp.dest('public/'));
 });
 

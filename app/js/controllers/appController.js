@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(app) {
-  app.controller('AppCtrl', ['$scope', '$http', '$location', 'Auth', function($scope, $http, $location, Auth) {
+  app.controller('AppCtrl', ['$scope', '$http', '$location', '$anchorScroll', 'Auth', function($scope, $http, $location, $anchorScroll, Auth) {
 
     $scope.getBlog = function() {
       var url = $location.path();
@@ -92,6 +92,26 @@ module.exports = function(app) {
         $location.path('/admin');
       });
     };
+    $scope.gotoLogout = function() {
+      $location.hash('admin_h1');
+      $anchorScroll();
+    };
+    $scope.gotoEdit = function() {
+      $location.hash('edit_Posts');
+      $anchorScroll();
+    };
+    $scope.gotoNewAdmin = function() {
+      $location.hash('new_Admin');
+      $anchorScroll();
+    };
+    $scope.gotoNewPost = function() {
+      $location.hash('new_Post');
+      $anchorScroll();
+    };
+    $scope.gotoAdminTop = function() {
+      $location.hash('admin_Top');
+      $anchorScroll();
+    }
  // $scope.removePerson = function(blog) {
  //    var url = 'http://localhost:3000';
  //      $http.delete(url + '/blogs/' + blog._id)

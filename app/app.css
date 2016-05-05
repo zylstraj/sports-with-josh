@@ -1,0 +1,241 @@
+/* Base CSS + State CSS */
+html {
+  font-family: 'Old Standard TT', serif;
+  color: #F9ED90;
+  background-color: #ED1C38;
+}
+header {
+}
+h1 {
+  font-size: 4em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+form {
+  text-align: center;
+}
+a:visited {
+  color: #ED1C38;
+}
+a:hover {
+  color: #F9ED90;
+}
+a {
+  color: #ED1C38;
+  text-decoration: none;
+}
+a h1 {
+  color: #F9ED90;
+}
+/* Main Blog Content Paragraph */
+.individualBlog {
+  background-color: white;
+  color: black;
+  border: 10px solid #F9ED90;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 1em 1em 1em;
+}
+/* Admin/Edit Individual Article-Blog Page */
+#edit_Title, #edit_Date, #edit_Content {
+  width: 80%;
+  text-align: center;
+}
+#edit_Admin {
+  background-color: white;
+  color: black;
+  border-top: 10px solid #F9ED90;
+  border-bottom: 10px solid #F9ED90;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 0 1em 0;
+}
+/* Admin Page h1/h2/h3's */
+#admin_h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: #F9ED90;
+}
+  #admin_h1 a {
+    color: #F9ED90;
+  }
+  #admin_h1 a:visited {
+    color: #F9ED90;
+  }
+.admin_h2 {
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 5px solid #F9ED90;
+  font-family: 'Oswald', sans-serif;
+}
+.admin_sections {
+  background-color: white;
+  border: 2px solid #F9ED90;
+  border-radius: 2px;
+}
+/* Admin Navigation Bar */
+#admin_Nav p {
+  /*color: #ED1C38;*/
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  width: 100%;
+  border-radius: 5px;
+}
+#admin_Nav {
+  background-color: white;
+  border: 5px solid #F9ED90;
+}
+/*#admin_Nav a:hover {
+  color: #F9ED90;
+}*/
+/*#admin_Nav a:visited {
+  color: #F9ED90;
+  text-transform: uppercase;
+}*/
+.warning {
+  margin-top: 3em;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 1.25em;
+  text-align: center;
+}
+.warning a {
+  font-size: 1.25em;
+  text-align: center;
+  color: #F9ED90;
+}
+.warning a:visited {
+  color: #F9ED90;
+}
+/* Blog Page: What the viewers will see */
+.article_h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: black;
+  margin: 1em .5em 0 .5em;
+  text-align: center
+}
+.article_h3:hover {
+  color: #ED1C38;
+}
+.article_date {
+}
+.article_content {
+  margin: 0 .5em 2em .5em;
+  padding-bottom: 1em;
+}
+/* Single View Blog */
+#singleview_p {
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+/* Login Page */
+#user_username, #user_password {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  width: 95%;
+  font-size: 1.25em;
+  margin: 0 2.5% 2em 2.5%;
+}
+.login_label {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .5em;
+  font-size: 1.5em;
+}
+.login_button {
+  font-size: 1.5em;
+  width: 60%;
+  text-align: center;
+}
+/* Edit Post Page */
+#edit_Title, #edit_Date {
+  /*font-family: 'Oswald', sans-serif;*/
+  text-align: center;
+  width: 95%;
+  font-size: 1em;
+  margin: 0 2.5% 2em 2.5%;
+  height: 3em;
+}
+#edit_Content {
+  width: 95%;
+  font-size: 1em;
+  margin: 0 2.5% 2em 2.5%;
+  height: 20em;
+  text-align: left;
+}
+.edit_label {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .5em;
+  font-size: 1.25em;
+}
+.edit_button {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  width: 40%;
+  text-align: center;
+  margin-bottom: .5em;
+}
+#edit_delete {
+  margin-top: 3em;
+}
+/* New Post : Admin Page */
+#blog_title, #blog_date, #blog_keywords, #user_name, #user_email, #user_password {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  width: 95%;
+  font-size: 1.25em;
+  margin: 0 2.5% 2em 2.5%;
+}
+.blog_label {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .5em;
+  font-size: 1.5em;
+  color: #ED1C38;
+}
+#blog_content {
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  width: 95%;
+  font-size: 1.25em;
+  margin: 0 2.5% 2em 2.5%;
+  height: 15em;
+}
+#admin_Top a {
+  color: #F9ED90;
+}
+#admin_Top a:visited {
+  color: #F9ED90;
+}
+
+@media (min-width: 600px) {
+  /* Main Header: Blog Page */;
+  .article_h3 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 800px) {
+  /* Login Button */
+.login_button {
+    width: 30%;
+  }
+  #admin_Nav p {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

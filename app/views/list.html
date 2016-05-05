@@ -1,13 +1,15 @@
 <section data-ng-controller="AppCtrl" data-ng-init="getAllPosts()">
   <div>
+    <header>
     <h1>Sports With Josh</h1>
-    <div data-ng-repeat="blog in blogs | orderBy: '-date'">
+  </header>
+    <div data-ng-repeat="blog in blogs | orderBy: '-date'" class="individualBlog">
       <!-- <img data-ng-src="{{blog.titleImage}}"> -->
-      <a href="#/blogs/{{blog._id}}"><h3>{{blog.title}}</h3></a>
-      <p>{{blog.date | date: 'M/dd/yyyy'}}</p>
+      <a href="#/blogs/{{blog._id}}"><h3 class="article_h3">{{blog.title}}</h3></a>
+      <p class="article_date">Posted: {{blog.date | date: 'M/dd/yyyy'}}</p>
       <!-- <p>Author: {{blog.author}}</p>
       <p>Keywords: {{blog.keywords[0]}}</p> -->
-      <p>{{blog.content}}
+      <p class="article_content">{{blog.content}}
        <!--  <span style="float:left; max-width:200px;">
           <img data-ng-src="{{blog.primary}}">
         </span> -->
