@@ -1,6 +1,9 @@
 <section data-ng-controller="AppCtrl" data-ng-init="getBlog()">
   <div>
-    <a href="#/articles" class="header_h1"><h1>Sports With Josh</h1></a>
+    <header>
+      <img src="images/Josh.png" alt="Josh Logo" id="photoJosh">
+      <a href="#/articles" class="header_h1"><h1>Sports With Josh</h1></a>
+    </header>
     <div class="individualBlog">
       <h3 class="article_h3">{{blog.title}}</h3></a>
       <p class="article_date">Posted: {{blog.date | date: 'M/dd/yyyy'}}</p>
