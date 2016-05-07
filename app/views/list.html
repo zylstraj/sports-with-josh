@@ -1,7 +1,8 @@
 <section data-ng-controller="AppCtrl" data-ng-init="getAllPosts()">
   <div>
     <header>
-    <h1>Sports With Josh</h1>
+    <img src="images/Josh.png" alt="Josh Logo" id="photo_Josh">
+    <h1 id="header_Josh">Sports With Josh</h1>
   </header>
     <div data-ng-repeat="blog in blogs | orderBy: '-date'" class="individualBlog">
       <!-- <img data-ng-src="{{blog.titleImage}}"> -->

@@ -23,6 +23,7 @@
     "angular": "^1.5.0",
     "angular-base64": "^2.0.5",
     "angular-cookies": "^1.5.0",
+    "angular-mocks": "^1.5.5",
     "angular-route": "^1.5.0",
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
@@ -31,9 +32,15 @@
     "gulp-clean": "^0.3.2",
     "gulp-cssnano": "^2.1.1",
     "gulp-eslint": "^2.0.0",
+    "gulp-karma": "0.0.5",
     "gulp-mocha": "^2.2.0",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
     "webpack-stream": "^3.1.0"
   },
   "dependencies": {
@@ -43,7 +50,8 @@
     "jsonwebtoken": "^5.7.0",
     "mongoose": "^4.4.7",
     "morgan": "^1.7.0",
-    "node-sass": "^3.4.2"
+    "node-sass": "^3.4.2",
+    "protractor": "^3.3.0"
   },
   "homepage": "https://github.com/zylstraj/sports-with-josh#readme"
 }
