@@ -48,7 +48,7 @@ module.exports = function(app) {
       })
       .success(function (data){
         console.log(data);
-        $location.path('/');
+        $location.path('/admin');
       });
     };
     $scope.editBlog = function(editedBlog) {
@@ -67,7 +67,7 @@ module.exports = function(app) {
       .success(function (data){
         $scope.blog = data;
         console.log(data);
-        $location.path('/');
+        $location.path('/admin');
       });
     };
     $scope.adminReturn = function() {
@@ -89,7 +89,7 @@ module.exports = function(app) {
       .success(function (data){
         // $scope.blog = data;
         delete $scope.data;
-        $location.path('/');
+        $location.path('/editposts');
       });
     };
     $scope.gotoLogout = function() {

@@ -1,0 +1,15 @@
+<header>
+      <img src="images/Josh.png" alt="Josh Logo" id="photoJosh">
+      <a href="#/articles" class="header_h1"><h1>Sports With Josh</h1></a>
+    </header>
+<section data-ng-controller="AppCtrl" data-ng-init="getAllPosts()" id="edit_Posts">
+  <div>
+    <h2 class="admin_h2">Edit/Delete</h2>
+    <div data-ng-repeat="blog in blogs | orderBy: '-date'" id="edit_Admin">
+      <!-- <img data-ng-src="{{blog.titleImage}}"> -->
+      <a href="#/admin/{{blog._id}}"><h3>{{blog.title}}</h3></a>
+      <a href="#/admin/{{blog._id}}"><p>Posted on {{blog.date | date: 'M/dd/yyyy'}}</p></a>
+      <!-- <h3>Edit Post</h3> -->
+    </div>
+  </div>
+</section>
