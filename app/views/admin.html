@@ -1,48 +1,9 @@
 <h1 id="admin_Top"><a href="#/">Sports With Josh</a></h1>
 <div id="admin_Nav">
-    <p><a ng-click="gotoNewPost()">New Post</a></p>
-    <p><a ng-click="gotoEdit()">Edit/Delete Posts</a></p>
-    <p><a ng-click="gotoNewAdmin()">Create New Admin</a></p>
-    <p><a ng-click="gotoLogout()">Logout</a></p>
+    <a href="#/post"><p>New Post</p></a>
+    <a href="#/editposts"><p>Edit/Delete Posts</p></a>
+    <a href="#/newAdmin"><p>Create New Admin</p></a>
+    <a href="#/logout"><p>Logout</p></a>
 </div>
-<h2 class="admin_h2" id="new_Post">New Post</h2>
-<section  data-ng-submit= "postBlog(newBlog)" class="admin_sections">
-  <form>
-    <label for="blog_title" class="blog_label">Title</label>
-    <input data-ng-model="newBlog.title" id="blog_title" type="text" placeholder="Name Of Article">
-    <label for="blog_date" class="blog_label">Date</label>
-    <input data-ng-model="newBlog.date" id="blog_date" type="date">
-    <label for="blog_keywords" class="blog_label">Keywords</label>
-    <input data-ng-model="newBlog.keywords" id="blog_keywords" type="text" placeholder="Sports Chicago Cubs">
-    <label for="blog_content" class="blog_label">Content</label>
-    <textarea data-ng-model="newBlog.content" id="blog_content" cols="30" rows="10" placeholder="Write The Article"></textarea>
-    <button type="submit" class="edit_button">Submit</button>
-  </form>
-</section>
 <!-- New User : Just incase I want to add collaborators or something along those lines -->
-<section data-ng-controller="AppCtrl" data-ng-init="getAllPosts()" id="edit_Posts">
-  <div>
-    <h2 class="admin_h2">Edit/Delete</h2>
-    <div data-ng-repeat="blog in blogs | orderBy: '-date'" id="edit_Admin">
-      <!-- <img data-ng-src="{{blog.titleImage}}"> -->
-      <h3>{{blog.title}}</h3>
-      <p>Posted on {{blog.date | date: 'M/dd/yyyy'}}</p>
-      <a href="#/admin/{{blog._id}}"><h3>Edit Post</h3></a>
-    </div>
-  </div>
-</section>
-<section data-ng-submit="submitSignUp(newUser)" id="new_Admin">
-  <h2 class="admin_h2">Create New Admin</h2>
-  <form class="admin_sections">
-    <label for="user_name" class="blog_label">UserName</label>
-    <input data-ng-model="newUser.username" id="user_name" type="text" placeholder="Username">
-    <label for="user_email" class="blog_label">email</label>
-    <input data-ng-model="newUser.email" id="user_email" type="email" placeholder="Something@url.com">
-    <label for="user_password" class="blog_label">Password</label><br>
-    <input data-ng-model="newUser.password" id="user_password" type="password" placeholder="************">
-    <button type="submit" class="edit_button">Submit</button>
-  </form>
-</section>
-<p class="warning">Don't Click Unless You Want To Log Out</p>
-<h3 id="admin_h1"><a href ng-click="logMeOut()">Log Out</a></h3>
 <p class="warning"><a ng-click="gotoAdminTop()">Back To Top</a><p>
