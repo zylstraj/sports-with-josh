@@ -2,9 +2,8 @@
 html {
   font-family: 'Old Standard TT', serif;
   color: #F9ED90;
-  background-color: #ED1C38;
-}
-header {
+  /*background-color: #ED1C38;*/
+  border: 12px solid #ED1C38;
 }
 h1 {
   font-size: 4em;
@@ -28,14 +27,40 @@ a {
 a h1 {
   color: #F9ED90;
 }
+/* Header For Site */
+header {
+  text-align: center;
+  border-bottom: 15px solid #F9ED90;
+  width: 100%;
+  background-color: #ED1C38;
+  border-radius: 10px;
+}
+#josh_Photo {
+    width: 150px;
+    height: 190px;
+  }
+  #header_Josh {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+  }
 /* Main Blog Content Paragraph */
 .individualBlog {
   background-color: white;
   color: black;
-  border: 10px solid #F9ED90;
+  border: 10px solid #ED1C38;
   text-align: center;
   border-radius: 5px;
-  margin: 0 1em 1em 1em;
+  width: 80%;
+  margin: 1em auto;
+}
+.multiBlog, .singleBlog {
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  width: 90%;
+  margin: 1em 4% 0 4%;
 }
 /* Admin/Edit Individual Article-Blog Page */
 #edit_Title, #edit_Date, #edit_Content {
@@ -114,15 +139,17 @@ a h1 {
   color: #F9ED90;
 }
 /* Blog Page: What the viewers will see */
-.article_h3 {
-  text-transform: uppercase;
-  font-size: 1.5em;
-  color: black;
-  margin: 1em .5em 0 .5em;
+.article_h3, .individual_h3 {
+  font-size: 1.25em;
+  color: #ED1C38;
+  margin: .5em .25em 0 .25em;
   text-align: center
 }
+.individual_h3 {
+  font-size: 2em;
+}
 .article_h3:hover {
-  color: #ED1C38;
+  color: #F9ED90;
 }
 .article_date {
 }
@@ -221,32 +248,65 @@ a h1 {
   color: #F9ED90;
 }
 
+#loadbutton {
+  font-size: 1.5em;
+  color: #ED1C38;
+  text-transform: uppercase;
+  text-align: center;
+  clear: both;
+}
+
 /* Footer */
-footer {
+#main_footer {
+  border-top: 5px solid #ED1C38;
   font-size: .75em;
   text-transform: uppercase;
+  color: #ED1C38;
   text-align: center;
   margin: 4em auto;
   font-family: 'Oswald', sans-serif;
+  clear: both;
 }
-header {
-  text-align: center;
-  margin-top: 1em;
-  border-bottom: 5px solid #F9ED90;
-}
+
 @media (min-width: 600px) {
-  #josh_Photo {
-    width: 300px;
-    height: 375px;
-    float: left;
-  }
-  #header_Josh {
-    width: 55%;
-    float: right;
-  }
+  .singleBlog {
+  border-radius: 5px;
+  width: 30%;
+  display: inline-block;
+  height: 225px;
+  margin: 1em 1%;
+  float: left;
+}
+  .multiBlog {
+  border-radius: 5px;
+  width: 45%;
+  display: inline-block;
+  height: 225px;
+  margin: 1em 2%;
+  float: left;
+}
+/*.multiBlog:nth-child(4n + 1) {
+  text-align: center;
+  border-radius: 5px;
+  height: 150px;
+  width: 80%;
+  margin: 1em 8%;
+  height: 175px;
+}*/
+
   /* Main Header: Blog Page */;
   .article_h3 {
-    font-size: 2em;
+    font-size: 1.25em;
+  }
+  /* Josh Photo and Widths */
+   #josh_Photo {
+    /*width: 40%;
+    float: left;*/
+  }
+  #header_Josh {
+    /*width: 55%;
+    float: right;*/
+    font-size: 2.25em;
   }
   #my_Edits {
     width: 80%;
@@ -260,10 +320,6 @@ header {
     width: 40%;
     margin: .5em auto;
   }
-  .individualBlog {
-    width: 80%;
-    margin: 1em auto;
-  }
   #user_password, #user_username, #admin_h1 {
     width: 60%;
     margin: .5em auto;
@@ -275,6 +331,22 @@ header {
 }
 @media (min-width: 800px) {
   /* Login Button */
+.multiBlog {
+  border-radius: 5px;
+  width: 30%;
+  display: inline-block;
+  height: 225px;
+  margin: 1em 1%;
+  float: left;
+}
+.multiBlog:nth-child(4n + 1) {
+  text-align: center;
+  border-radius: 5px;
+  height: 150px;
+  width: 70%;
+  margin: 1em 14%;
+  height: 175px;
+}
   #admin_Nav p {
     display: inline-block;
     text-align: center;

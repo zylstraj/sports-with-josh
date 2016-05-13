@@ -11,7 +11,11 @@ module.exports = function(app) {
         $scope.blog = response;
       });
     };
+    $scope.limit = 4;
 
+    $scope.loadMore = function() {
+    $scope.limit = $scope.limit + 4;
+  }
     $scope.getAllPosts = function() {
       $http.get('/blogs').success(function(response){
         $scope.blogs = response;

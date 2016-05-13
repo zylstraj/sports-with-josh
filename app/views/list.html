@@ -4,7 +4,7 @@
     <img src="images/Josh.png" alt="Josh Logo" id="photo_Josh">
     <h1 id="header_Josh">Sports With Josh</h1>
   </header>
-    <div data-ng-repeat="blog in blogs | orderBy: '-date'" class="individualBlog">
+    <div data-ng-repeat="blog in blogs | orderBy: '-date' | limitTo: limit" class="multiBlog">
       <!-- <img data-ng-src="{{blog.titleImage}}"> -->
       <a href="#/blogs/{{blog._id}}"><h3 class="article_h3">{{blog.title}}</h3></a>
       <p>{{blog.description}}</p>
@@ -15,9 +15,10 @@
        <!--  <span style="float:left; max-width:200px;">
           <img data-ng-src="{{blog.primary}}">
         </span> -->
-      </p>
+      <!-- </p> -->
       <!-- <img data-ng-src="{{blog.secondary}}">
       <p>Article Id: {{blog._id}}</p> -->
     </div>
+    <p ng-click='loadMore()' id="loadbutton">More News</p>
   </div>
 </section>
