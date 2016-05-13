@@ -11,7 +11,11 @@ module.exports = function(app) {
         $scope.blog = response;
       });
     };
+    $scope.limit = 4;
 
+    $scope.loadMore = function() {
+    $scope.limit = $scope.limit + 4;
+  }
     $scope.getAllPosts = function() {
       $http.get('/blogs').success(function(response){
         $scope.blogs = response;
@@ -48,7 +52,7 @@ module.exports = function(app) {
       })
       .success(function (data){
         console.log(data);
-        $location.path('/');
+        $location.path('/admin');
       });
     };
     $scope.editBlog = function(editedBlog) {
@@ -89,7 +93,7 @@ module.exports = function(app) {
       .success(function (data){
         // $scope.blog = data;
         delete $scope.data;
-        $location.path('/admin');
+        $location.path('/editposts');
       });
     };
     $scope.gotoLogout = function() {

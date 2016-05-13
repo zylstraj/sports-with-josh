@@ -26,12 +26,16 @@ app.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/singlepost.html',
       controller: 'AppCtrl'
     })
-    .when('/newuser', {
+    .when('/newAdmin', {
       templateUrl: 'views/newuser.html',
       controller: 'AppCtrl'
     })
     .when('/login', {
       templateUrl: 'views/login.html',
+      controller: 'AppCtrl'
+    })
+    .when('/logout', {
+      templateUrl: 'views/logout.html',
       controller: 'AppCtrl'
     })
     .when('/post', {
@@ -44,6 +48,10 @@ app.config(['$routeProvider', function($routeProvider) {
     })
     .when('/admin', {
       templateUrl: 'views/admin.html',
+      controller: 'AppCtrl'
+    })
+    .when('/editposts', {
+      templateUrl: 'views/editposts.html',
       controller: 'AppCtrl'
     })
     .when('/', {

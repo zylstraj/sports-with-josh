@@ -11,9 +11,11 @@
      <!--  <img data-ng-src="{{blog.primary}}">
       <img data-ng-src="{{blog.secondary}}">
       <p>Article Id: {{blog._id}}</p> -->
-      <form data-ng-submit="editBlog(blog)">
+      <form data-ng-submit="editBlog(blog)" id="my Edits">
         <label for="edit_Title" class="edit_label">Title</label>
         <input type="text" id="edit_Title" data-ng-model="blog.title"/>
+        <label for="blog_description">Secondary Description</label>
+        <input type="text" id="blog_description" data-ng-model="blog.description">
         <label for="edit_Date" class="edit_label">Date</label>
         <input type="text" id="edit_Date" data-ng-model="blog.date"/>
         <label for="edit_Content" class="edit_label">Content</label>

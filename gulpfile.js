@@ -14,7 +14,7 @@ var paths = {
   js: ['*.js', 'routes/*.js', 'test/*.js', 'app/**/*.js', 'lib/*.js', 'models/*.js'],
   html: ['app/**/*.html'],
   css: ['app/**/*.scss', 'app/**/*.sass'],
-  test: ['test/*.js']
+  test: ['tests/blog-tests.js']
 };
 
 gulp.task('lint', function(){
@@ -73,6 +73,11 @@ gulp.task('watch:html', function() {
 
 gulp.task('watch:js', function() {
   gulp.watch(paths.js, ['build:js']);
+});
+gulp.task('bundle:test', function() {
+  return gulp.src(__dirname + '/tests/unit-tests/client_spec.js')
+    .pipe(webpack({output: {filename: 'test_bundle.js'}}))
+    .pipe(gulp.dest('./tests'));
 });
 
 gulp.task('build:all', ['build:css', 'build:html', 'build:js']);

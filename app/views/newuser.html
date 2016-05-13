@@ -1,12 +1,16 @@
-<section data-ng-submit="submitSignUp(newUser)">
-  <h1>New User Sign Up</h1>
-  <form>
-    <label for="user_name">UserName</label>
+<header>
+    <img src="images/Josh.png" alt="Josh Logo" id="photoJosh">
+    <a href="#/articles" class="header_h1"><h1>Sports With Josh</h1></a>
+</header>
+<section data-ng-submit="submitSignUp(newUser)" id="new_Admin">
+  <h2 class="admin_h2">Create New Admin</h2>
+  <form class="admin_sections">
+    <label for="user_name" class="blog_label">UserName</label>
     <input data-ng-model="newUser.username" id="user_name" type="text" placeholder="Username">
-    <label for="user_email">email</label>
-    <input data-ng-model="newUser.email" id="user_email" type="email" placeholder="you@url.com">
-    <label for="user_password">Password</label>
+    <label for="user_email" class="blog_label">email</label>
+    <input data-ng-model="newUser.email" id="user_email" type="email" placeholder="Something@url.com">
+    <label for="user_password" class="blog_label">Password</label><br>
     <input data-ng-model="newUser.password" id="user_password" type="password" placeholder="************">
-    <button type="submit">Submit</button>
+    <button type="submit" class="edit_button">Submit</button>
   </form>
 </section>
