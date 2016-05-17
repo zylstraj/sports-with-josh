@@ -183,6 +183,7 @@ header {
   text-align: center;
   margin-bottom: .5em;
   font-size: 1.5em;
+  color: #ED1C38;
 }
 .login_button {
   font-size: 1.5em;
@@ -190,7 +191,7 @@ header {
   text-align: center;
 }
 /* Edit Post Page */
-#edit_Title, #edit_Date {
+#edit_Title, , #edit_description, #edit_Date {
   font-family: 'Oswald', sans-serif;
   text-align: center;
   width: 95%;
@@ -212,6 +213,7 @@ header {
   text-align: center;
   margin-bottom: .5em;
   font-size: 1.25em;
+  color: #ED1C38;
 }
 .edit_button {
   font-family: 'Oswald', sans-serif;
@@ -225,7 +227,7 @@ header {
   margin-top: 3em;
 }
 /* New Post : Admin Page */
-#blog_title, #blog_date, #blog_keywords, #user_name, #user_email, #user_password {
+#blog_title, #blog_description, #blog_date, #blog_keywords, #user_name, #user_email, #user_password {
   font-family: 'Oswald', sans-serif;
   text-align: center;
   width: 95%;
@@ -279,6 +281,14 @@ header {
   clear: both;
   border-radius: 10px;
   height: 4em;
+  padding-top: 2em;
+}
+#singleView {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ED1C38;
   padding-top: 2em;
 }
 

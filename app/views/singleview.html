@@ -12,7 +12,7 @@
       <a href="#/articles"><p id="singleview_p">Back</p></a>
     </div>
     <div data-ng-init="getAllPosts()">
-      <h2>Most Recent Articles</h2>
+      <h2 id="singleView">Most Recent Articles</h2>
     <div data-ng-repeat="blog in blogs | orderBy: '-date' | limitTo: 3" class="singleBlog">
       <a href="#/blogs/{{blog._id}}"><h3 class="article_h3">{{blog.title}}</h3></a>
       <p>{{blog.description}}</p>
